@@ -11,7 +11,8 @@ Script Trigger is a FiveM resource that simplifies the process of setting up and
 ## How to use script_trigger
 In the `fxmanifest.lua` of any resource, add the following line: 
 ```lua 
-script_trigger 'command' 
+script_trigger 'command'
+script_trigger_cached 'true' -- true script will run once / false script will run everytime restart resource
 ``` 
 This will execute the specified command when the resource is started. The command can be any valid script or command, such as creating a web server or running a database query or any script that u want. 
 
